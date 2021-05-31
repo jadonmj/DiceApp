@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_layout_background"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/image_view_dice_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/str_image_desc_one"
+            android:padding="@dimen/padding_eight"
+            android:src="@drawable/dice_empty"
+            tools:src="@drawable/dice5" />
+        <ImageView
+            android:id="@+id/image_view_dice_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_eight"
+            android:layout_weight="1"
+            android:contentDescription="@string/str_image_desc_two"
+            android:src="@drawable/dice_empty"
+            tools:src="@drawable/dice4"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_roll_dice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_eight"
+        android:text="@string/str_roll"
+        android:background="@color/color_button"/>
+
+</RelativeLayout>
